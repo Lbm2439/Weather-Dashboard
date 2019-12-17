@@ -1,0 +1,39 @@
+.small-box {
+    background-color: lightblue;
+    color: black;
+    height: 17vh;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: #837e7e;
+    color: floralwhite;
+}
+.long {
+    height: 60vh;
+    background-color: #e4e4e4;
+}
+.top {
+    border: 1px solid darkslategray;
+}
+.top {
+    height: 30vh;
+}
+.bottom {
+    height: 30vh;
+    border: 1px solid darkslategray;
+    padding-top: 5vh;
+}
+{
+    margin-top: none;
+
+}
+#fiveday {
+    margin-top: -21px;
+}
+#search {
+    font-size: 15px;
+    margin-top: 8px;
+}
