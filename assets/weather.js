@@ -1,35 +1,23 @@
-$(".save-btn").on("click", function() {
+
+var searchButton = $(".save-btn")
+
+function getWeather(){
+
+    var myKey = "0a4173aac6f19f5152e686336c4ee7e9"
     var taskIndex = $(this).attr("data-taskIndex");
     var inputLine = $(".srch .long")[taskIndex]
     var inputField = $(inputLine).children('input')
     var inputVal = inputField.val()
-});   
+    var citySearch = $("#city").val();
+    
+    localStorage.setItem("history", citySearch);
+    $("#states").prepend(localStorage.getItem("history"));
+    
+
+}
+searchButton.on("click", getWeather)
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-// window.onload = init;
-
-//  function {
-     
-//  };
- 
-// var inputValJson=JSON.stringify(inputVal);
-// localStorage.setItem("submit", inputValJson);
-// var newInputValJson = localStorage.getItem("sumbit");
-// var newInputVal = JSON.parse(newInputValJson);
-
-// console.log();
 
