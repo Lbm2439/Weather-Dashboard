@@ -11,7 +11,12 @@ function getWeather(){
     var citySearch = $("#city").val();
     
     localStorage.setItem("history", citySearch);
-    $("#states").prepend(localStorage.getItem("history"));
+    var li = $("<li>").text(citySearch);
+    $("#states").prepend(li);
+    //set and refresh onload
+
+   
+
     
 
 }
