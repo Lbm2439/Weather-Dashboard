@@ -13,16 +13,8 @@ function getWeather(){
     localStorage.setItem("history", citySearch);
     var li = $("<li>").text(citySearch);
     $("#states").prepend(li);
-    //set and refresh onload
-
-   
-
     
+
 
 }
 searchButton.on("click", getWeather)
-
-
-
-
-
